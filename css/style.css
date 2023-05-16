@@ -22,7 +22,8 @@ body {
 .hero-top{
     display: flex;
     justify-content: center;
-    gap: 232px;
+    align-items: center;
+    gap: 270px;
 
     .hero-logo {
         font-size: 24px;
@@ -42,6 +43,7 @@ body {
     display: flex;
     gap: 64px;
     justify-content: center;
+    align-items: center;
 
     & h1 {
         font-size: 48px;
@@ -52,6 +54,7 @@ body {
     & p {
         color: #E5E7EB;
         margin: 12px 0;
+        line-height: 1.5;
     }
     & button {
         background-color: #3882F6;
@@ -61,6 +64,7 @@ body {
         padding: 8px 32px;
         border-radius: 8px;
         border: none;
+        margin-top: 8px;
     }
     & img {
         width: 460px;
@@ -73,25 +77,37 @@ body {
 
 .body{
     text-align: center;
+    padding-bottom: 100px;
 
     .icon-container {
         display: flex;
         justify-content: center;
         gap: 48px;
+        color: rgb(77, 80, 83);
     }
-
     .icon {
         width: 160px;
     }
-
-    & h1 {
+    .info-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .info-header {
         font-size: 36px;
         font-weight: bolder;
         color: #1F2937;
         text-align: center;
-        margin: 42px 0;
+        margin: 24px 0 12px;
     }
-
+    .info-text{
+        font-size: 18px;
+        text-align: center;
+        width: 750px;
+        margin: 0 0 48px;
+        line-height: 1.5;
+    }
     & img{
         width: 156px;
         height: 156px;
@@ -99,7 +115,32 @@ body {
         border-radius: 16px;
         padding: 8px;
     }
+}
 
+.quote{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #E5E7EB;
+    margin: 0;
+    padding: 160px; 
 
+    .quote-content{
+        font-size: 36px;
+        font-weight: 100;
+        font-style: italic;
+        color: #1F2937;
+        margin: 0;
+        width: 750px; 
+    }
+    .quote-author{
+        font-size: 32px;
+        font-weight: bold;
+    }
+}
 
+.action-section{
+    margin: 1000px;
+    padding: 1000px;
 }
